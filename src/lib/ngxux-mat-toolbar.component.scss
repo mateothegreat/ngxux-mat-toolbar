@@ -1,0 +1,40 @@
+:host {
+    
+    .wrapper {
+        
+        display: flex;
+        align-items: center;
+        
+        height: 70px;
+        
+        background: #0390EA;
+        
+        .left {
+            
+            flex: 0 1 300px;
+            padding: 20px;
+            
+            color: #EBF0F2;
+            font-weight: bold;
+            font-size: 20px;
+            
+            span {
+                
+                font-weight: normal;
+                
+                color: #85d4ff;
+                
+            }
+            
+        }
+        
+        .right {
+            
+            flex: 1;
+            padding: 20px;
+            
+        }
+        
+    }
+    
+}

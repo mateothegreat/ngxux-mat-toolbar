@@ -1,19 +1,34 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'lib-ngxux-mat-toolbar',
-  template: `
-    <p>
-      ngxux-mat-toolbar works!
-    </p>
-  `,
-  styles: []
+
+    selector: 'ngxux-mat-toolbar',
+
+    template: `
+
+        <div class="wrapper">
+
+            <div class="left">
+
+                {{ title }} <span>{{ subtitle }}</span>
+
+            </div>
+
+            <div class="right">
+
+
+            </div>
+
+        </div>
+
+    `,
+
+    styleUrls: [ './ngxux-mat-toolbar.component.scss' ]
+
 })
-export class NgxuxMatToolbarComponent implements OnInit {
+export class NgxuxMatToolbarComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+    @Input() public title: string;
+    @Input() public subtitle: string;
 
 }
