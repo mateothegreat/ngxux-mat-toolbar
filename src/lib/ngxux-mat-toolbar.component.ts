@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input }       from '@angular/core';
+import { NgxuxMatToolbarService } from './ngxux-mat-toolbar.service';
 
 @Component({
 
@@ -16,6 +17,16 @@ import { Component, Input } from '@angular/core';
 
             <div class="right">
 
+                <div *ngFor="let item of ngxuxMatToolbarService.menuItems"
+                     (click)="ngxuxMatToolbarService.onClick(item)"
+                     class="item"
+                     routerLinkActive="active"
+                     [routerLink]="[ item.path ]">
+
+                    <mat-icon class="icon"
+                              [style.color]="item.color">{{ item.icon }}</mat-icon>
+
+                </div>
 
             </div>
 
@@ -30,5 +41,9 @@ export class NgxuxMatToolbarComponent {
 
     @Input() public title: string;
     @Input() public subtitle: string;
+
+    public constructor(public ngxuxMatToolbarService: NgxuxMatToolbarService) {
+
+    }
 
 }

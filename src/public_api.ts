@@ -3,5 +3,6 @@
  */
 
 export * from './lib/ngxux-mat-toolbar.service';
+export * from './lib/ngxux-mat-toolbar-item';
 export * from './lib/ngxux-mat-toolbar.component';
 export * from './lib/ngxux-mat-toolbar.module';

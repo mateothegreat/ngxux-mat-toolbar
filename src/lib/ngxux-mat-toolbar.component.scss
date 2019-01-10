@@ -33,6 +33,27 @@
             flex: 1;
             padding: 20px;
             
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            .item {
+                
+                cursor: pointer;
+                margin: 5px;
+                
+                &:hover {
+
+                    mat-icon {
+    
+                        font-weight: bold;
+    
+                    }
+                    
+                }
+                
+            }
+            
         }
         
     }
