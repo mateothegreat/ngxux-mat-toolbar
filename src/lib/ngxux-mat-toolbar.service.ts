@@ -1,6 +1,5 @@
 import { Injectable }                  from '@angular/core';
 import { Subject }                     from 'rxjs';
-import { NgxuxMatVerticalToolbarItem } from '../../../ngxux-mat-vertical-toolbar/src/lib/ngxux-mat-vertical-toolbar-item';
 import { NgxuxMatToolbarItem }         from './ngxux-mat-toolbar-item';
 
 @Injectable({
@@ -16,12 +15,12 @@ export class NgxuxMatToolbarService {
     /**
      * Observable for menu item click events.
      */
-    public click$: Subject<NgxuxMatVerticalToolbarItem> = new Subject();
+    public click$: Subject<NgxuxMatToolbarItem> = new Subject();
 
     /**
      * Internal function used to propogate click events to the observable.
      */
-    public onClick(menuItem: NgxuxMatVerticalToolbarItem): void {
+    public onClick(menuItem: NgxuxMatToolbarItem): void {
 
         this.click$.next(menuItem);
 
