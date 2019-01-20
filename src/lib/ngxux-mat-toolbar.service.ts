@@ -1,6 +1,6 @@
-import { Injectable }                  from '@angular/core';
-import { Subject }                     from 'rxjs';
-import { NgxuxMatToolbarItem }         from './ngxux-mat-toolbar-item';
+import { Injectable }          from '@angular/core';
+import { Subject }             from 'rxjs';
+import { NgxuxMatToolbarItem } from './ngxux-mat-toolbar-item';
 
 @Injectable({
     providedIn: 'root'

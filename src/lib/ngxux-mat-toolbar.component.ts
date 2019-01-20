@@ -7,7 +7,8 @@ import { NgxuxMatToolbarService } from './ngxux-mat-toolbar.service';
 
     template: `
 
-        <div class="wrapper">
+        <div class="wrapper"
+             [style.background-color]="backgroundColor">
 
             <div class="left">
 
@@ -41,6 +42,9 @@ export class NgxuxMatToolbarComponent {
 
     @Input() public title: string;
     @Input() public subtitle: string;
+    @Input() public backgroundColor: string = '#0390EA';
+    @Input() public headerTextColor: string = '#EBF0F2';
+    @Input() public headerSubTextColor: string = '#85d4ff';
 
     public constructor(public ngxuxMatToolbarService: NgxuxMatToolbarService) {
 
